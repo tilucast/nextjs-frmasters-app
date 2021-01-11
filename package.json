@@ -1,0 +1,23 @@
+{
+  "name": "nextjs-fr-masters",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@theme-ui/presets": "^0.3.5",
+    "body-parser": "^1.19.0",
+    "next": "^9.5.0",
+    "next-connect": "^0.8.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "theme-ui": "^0.3.5"
+  }
+}
