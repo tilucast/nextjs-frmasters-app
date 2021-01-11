@@ -12,11 +12,16 @@ export async function getServerSideProps({params, req, res}){
         return {props: {}}
     }
 
+   
     const json = await response.json()
-
-    return {
-        props: {note: json}
+    
+    
+    if(json){
+        return {
+            props: {note: json}
+        }
     }
+    
 }
 
 const NotePage = ({note}) => {
