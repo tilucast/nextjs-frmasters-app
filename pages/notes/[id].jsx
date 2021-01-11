@@ -3,7 +3,7 @@
 import {jsx} from 'theme-ui'
 
 export async function getServerSideProps({params, req, res}){
-    const response = await fetch(`${process.env.API_URL}/${params.id}`)
+    const response = await fetch(`${process.env.API_URL}/api/notes/${params.id}`)
 
     if(!response.ok){
         

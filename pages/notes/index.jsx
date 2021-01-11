@@ -4,7 +4,7 @@ import {jsx} from 'theme-ui'
 import Link from 'next/link'
 
 export async function getServerSideProps(){
-    const result = await fetch(`${process.env.API_URL}`)
+    const result = await fetch(`${process.env.API_URL}/api/notes`)
     const data = await result.json()
 
     return {
